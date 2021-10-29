@@ -1,0 +1,25 @@
+{
+ "manifest_version": 2,
+ "name": "DLCMHUB Data Extractor",
+ "version": "1.0.0",
+ "description": "This is a convert data extractor for DLCM Rivers state (Showers of blessings through chirst)",
+ "short_name": "DLCM E-followup data extractor",
+ "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
+ "content_scripts": [
+   {
+     "matches": ["https://dclmhub.com/efollowup/members/*"],
+     "css": ["style.css"],
+     "js": ["script.js"]
+   }
+ ],
+ "browser_action": {
+   "default_title": "Does a thing when you do a thing",
+   "default_popup": "popout.html",
+   "default_icon": {
+     "16": "icons/icon16.png",
+     "32": "icons/icon32.png",
+     "48": "icons/icon48.png",
+     "128": "icons/icon128.png"
+   }
+ }
+}
